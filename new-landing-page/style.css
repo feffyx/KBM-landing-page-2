@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    font-family: 'Poppins';font-size: 16px;
+}
+
+/* general features */
+.font-weight-bold {
+    font-weight: 700
+}
+
+/* navbar & banner*/
+.navbar-logo {
+    max-width: 70%;
+    height: auto;
+}
+
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+
+
+.banner {
+    background: none;
+}
+
+.cta-green {
+    background-color: #00FFAD !important;
+    color: #192440 !important;
+    padding: 12px 30px;
+}
+
+.banner {
+    position: relative;
+    background: url(/img/banner-bk.jpg) no-repeat center center/cover;
+    color: white;
+    padding: 70px 0;
+    margin-top: 0;
+}
+
+.banner-text {
+    position: relative;
+    text-align: left;
+}
+
+/* achievements section */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+.achievement-icon {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.achievement-icon.fa-trophy {
+    font-size: 5em;
+}
+
+#aat-icon {
+    width:120px ;
+    height: 125px;
+}
+
+
+
+/* why section white*/
+#feature-first {
+    background: linear-gradient(168deg, #ffffff 55%, #00FFAD 0);
+    ;
+}
+
+.img-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* why section green  */
+#feature-last {
+    background: #00FFAD;
+}
+
+
+.custom-video {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#feature-last .col-md-6 {
+    display: flex;
+    align-items: center;
+}
+
+#feature-last .col-md-6:first-child {
+    justify-content: flex-start;
+}
+
+#feature-last .col-md-6:last-child {
+    text-align: left;/
+}
+
+
+
+/* Style for job roles */
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+
+}
+
+/* Card styling */
+.job-role {
+    padding: 20px;
+    background: #fff;
+    transition: transform 0.3s ease;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.job-role h5,
+.job-role ul {
+    text-align: left;
+}
+
+.job-role h5,
+.job-role ul {
+    padding-left: 1rem;
+}
+
+.job-role ul {
+    padding-left: 2rem;
+}
+
+.job-role:hover {
+    transform: scale(1.05);
+    background-color: #192440;
+    color: #ffffff;
+}
+
+.job-role:hover h4,
+.job-role:hover ul li {
+    color: #ffffff;
+}
+
+.job-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.job-list li {
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+
+    /* For medium devices like tablets */
+    .job-role {
+        flex: 1 1 calc(50% - 20px);
+        /* 2 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* For small devices like phones */
+    .job-role {
+        flex: 1 1 calc(100% - 20px);
+        /* 1 card per row */
+    }
+}
+
+/* carousel */
+.carousel-slide {
+    padding: 20px;
+}
+
+.custom-carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-fit: cover;
+    display: block;
+    max-height: 100px;
+    margin: 20px auto;
+    padding: 10px auto;
+}
+
+
+
+/* contacts */
+#contacts {
+    background-image: url('img/contact-bk.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+    color: #ffffff;
+}
+
+#contact-us form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.map-container {
+    padding: 0px;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact-info {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.map-numbers {
+    padding-top: 15px;
+}
